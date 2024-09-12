@@ -14,7 +14,7 @@ const Navbar = () => {
           {pathname === '/why' && (
             <Link href="/" className="text-holly hover:text-claret">Get the app</Link>
           )}
-          <Link href="/why" className="text-holly hover:text-claret">Why Keen?</Link>
+          <Link href="/why" className="text-holly hover:text-claret">Why?</Link>
           {/* Add more navigation links as needed */}
         </div>
       </div>
