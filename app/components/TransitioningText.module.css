@@ -1,0 +1,33 @@
+.magicContainer {
+  position: relative;
+}
+
+.magicLetter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.magicLetter.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.magicContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(201, 237, 220, 0.2), rgba(124, 7, 40, 0.2));
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}
+
+.magicContainer:hover::after {
+  opacity: 1;
+}
