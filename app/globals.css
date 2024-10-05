@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zen+Loop:ital@0;1&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,8 +17,34 @@
 }
 
 body {
-  background-color: #fffcf5;
+  background-color: #FDFBFF;
   min-height: 100vh;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Bellota Text';
+    src: url('https://fonts.gstatic.com/s/bellotatext/v14/0FlMVP2VnlWS4f3-UE9hHXM5VfsqfQXwQy6yxg.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Bellota';
+    src: url('https://fonts.gstatic.com/s/bellota/v14/MwQ2bhXl3_qEpiwAKJBbtQ.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Zen Loop';
+    src: url('https://fonts.gstatic.com/s/zenloop/v5/h0GrssK16UsnJwHsEK9zqwzNiA.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
 }
 
 @layer utilities {

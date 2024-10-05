@@ -9,7 +9,7 @@ import { detect } from 'detect-browser'
 const browser = detect()
 const isMobile = browser && (browser.os === 'iOS' || browser.os === 'Android OS')
 
-const BASE_PARTICLE_COUNT = isMobile ? 10000 : 20000
+const BASE_PARTICLE_COUNT = isMobile ? 10000 : 15000
 const ATTRACTOR_COUNT = 50
 
 function createHeartShape(t, scale = 1) {
@@ -110,7 +110,7 @@ function Particles() {
           const dy = attractorPositions[j * 3 + 1] - positions[i * 3 + 1]
           const dz = attractorPositions[j * 3 + 2] - positions[i * 3 + 2]
           const distanceSquared = dx * dx + dy * dy + dz * dz
-          const force = 0.0000025 / distanceSquared // Avoid sqrt for performance
+          const force = 0.0000045 / distanceSquared // Avoid sqrt for performance
   
           totalForce[0] += dx * force
           totalForce[1] += dy * force
