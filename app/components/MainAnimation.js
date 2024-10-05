@@ -174,7 +174,7 @@ function Particles() {
 const MainAnimation = () => {
   return (
     <div className="w-full h-full relative">
-      <Canvas camera={{ position: [0, 0, 120], fov: 75 }}>
+      <Canvas camera={{ position: [0, -5, 120], fov: 75 }}>
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
         <Particles />

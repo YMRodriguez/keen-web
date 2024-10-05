@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="relative h-screen flex flex-col">
+      <div className="relative h-screen flex flex-col overflow-hidden">
         {/* Render the animation */}
         {isClient && (
           <div className="flex-grow">
@@ -25,8 +25,8 @@ export default function Home() {
           </div>
         )}
 
-        {/* Position the button above the animation */}
-        <div className="absolute inset-0 flex items-center justify-center z-10">
+        {/* Adjusted Button Position */}
+        <div className="absolute inset-x-0 top-[55%] flex items-center justify-center z-10">
           <a
             href="https://lv4iyra4d6r.typeform.com/to/x95yF15X"
             target="_blank"
@@ -43,8 +43,8 @@ export default function Home() {
           </a>
         </div>
 
-        {/* Your existing content */}
-        <div className="absolute inset-x-0 top-[10%] flex items-center justify-center z-20">
+        {/* Adjusted Existing Content Position */}
+        <div className="absolute inset-x-0 top-[15%] flex items-center justify-center z-20">
           <div className="text-center">
             <h1 className="text-black text-9xl font-light mb-4">
               <span className="font-zen text-[14rem]">K</span>
