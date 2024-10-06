@@ -21,6 +21,10 @@ body {
   min-height: 100vh;
 }
 
+.hidden-until-fonts-loaded {
+  visibility: hidden;
+}
+
 @layer base {
   @font-face {
     font-family: 'Bellota Text';

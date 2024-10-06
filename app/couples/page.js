@@ -9,11 +9,19 @@ const ButtonAttractorAnimation = dynamic(() => import('../components/ButtonAttra
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false)
+  const [fontsLoaded, setFontsLoaded] = useState(false) // New state for fonts
   const [buttonPosition, setButtonPosition] = useState({ x: 0, y: 0, z: 0 })
   const buttonRef = useRef(null)
 
   useEffect(() => {
     setIsClient(true)
+  }, [])
+
+  // Check if fonts have loaded
+  useEffect(() => {
+    document.fonts.ready.then(() => {
+      setFontsLoaded(true)
+    })
   }, [])
 
   useEffect(() => {
@@ -32,7 +40,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main>
+    <main className={!fontsLoaded ? 'hidden-until-fonts-loaded' : ''}>
       <div className="relative h-screen flex flex-col overflow-hidden">
         {isClient && (
           <div className="absolute inset-0">
