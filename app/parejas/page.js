@@ -68,10 +68,9 @@ export default function Home() {
         <div className="absolute inset-x-0 top-[10%] flex items-center justify-center z-20">
           <div className="text-center">
             <h1 className="text-black text-9xl font-light mb-2">
-              <span className="font-zen text-[12rem]">K</span>
+              <span className="font-zen text-[10rem]">K</span>
               <span className="font-bellota text-7xl">een</span>
             </h1>
-            <p className="text-black mb-2 font-bellota text-lg">Understanding togetherness</p>
           </div>
         </div>
       </div>
